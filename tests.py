@@ -21,3 +21,11 @@ class ArrayTest(unittest.TestCase):
         result = remove_zeros(nums)
 
         self.assertEqual(expected_result, result)
+
+    def test_remove_zeros_returns_empty_list(self):
+        nums = [0, 0, 0]
+
+        expected_result = []
+        result = remove_zeros(nums)
+
+        self.assertEqual(expected_result, result)
